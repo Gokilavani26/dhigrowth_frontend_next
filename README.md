@@ -1,8 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DhiGrowth
 
-## Getting Started
+> **Dhi Growth: Turning Your Business Potential into Lasting Success.**
 
-First, run the development server:
+A modern, high-performance web application built with **Next.js (App Router)** to deliver a fast, responsive, and interactive experience for DhiGrowth users. 
+
+## ✨ Key Features
+
+- **Next.js App Router**: Optimized routing and server-side rendering.
+- **Dynamic UI**: Beautiful micro-interactions and smooth animations using Framer Motion.
+- **Responsive Design**: Mobile-first architecture styled with Tailwind CSS.
+- **State Management**: Lightweight and fast global state management with Zustand.
+- **Type Safety**: Fully built with TypeScript for robust and maintainable code.
+- **API Integration**: Seamless data fetching utilizing Axios.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **HTTP Client**: [Axios](https://axios-http.com/)
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+- Node.js (v20 or higher recommended)
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+```bash
+cd dhigrowth_frontend_next
+```
+
+3. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Running the Development Server
+
+Start the development server with hot-reloading:
 
 ```bash
 npm run dev
@@ -10,27 +65,22 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project follows the standard Next.js App Router structure:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+├── app/                  # Next.js App Router pages and layouts
+│   ├── layout.tsx        # Root layout wrapper
+│   ├── page.tsx          # Main entry page
+│   └── globals.css       # Global styles and Tailwind directives
+├── components/           # Reusable React components (UI, Layout, etc.)
+├── public/               # Static assets (images, fonts, icons)
+├── package.json          # Project dependencies and scripts
+├── tailwind.config.ts    # Tailwind CSS configuration
+└── tsconfig.json         # TypeScript configuration
+```
