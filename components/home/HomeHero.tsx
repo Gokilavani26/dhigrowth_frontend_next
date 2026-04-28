@@ -24,7 +24,7 @@ const HomeHero = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h1 className="main-heading text-center sm:text-left uppercase">
-            We Deliver Huge Impact <br /> on Your <br />
+            Business Growth Agency Delivering Huge Impact <br /> For Your <br />
             <Highlight className="text-black px-4 sm:pl-1 sm:pr-4">
               Business Growth
             </Highlight>

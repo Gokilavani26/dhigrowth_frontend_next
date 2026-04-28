@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function BusinessServices() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 md:py-16 py-12 font-body">
-      <motion.h1
+      <motion.h3
         className="font-headers text-black text-center text-5xl md:mb-16 mb-12"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export default function BusinessServices() {
         viewport={{ once: true }}
       >
         FOR BUSINESSES: WE SOLVE, YOU SCALE
-      </motion.h1>
+      </motion.h3>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <motion.div

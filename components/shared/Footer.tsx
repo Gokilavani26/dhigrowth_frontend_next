@@ -29,8 +29,8 @@ const Footer = () => {
                 className='text-white hover:text-gray-200 transition-colors'
               >
                 <Image
-                  src="/svgs/fbIcon.svg"
-                  alt="Facebook"
+                  src="/svgs/facebook-social-icon.svg"
+                  alt="Follow DhiGrowth on Facebook"
                   width={24}
                   height={24}
                   className="w-6 h-6"
@@ -43,8 +43,8 @@ const Footer = () => {
                 className='text-white hover:text-gray-200 transition-colors'
               >
                 <Image
-                  src="/svgs/instagram.svg"
-                  alt="Instagram"
+                  src="/svgs/instagram-social-icon.svg"
+                  alt="Follow DhiGrowth on Instagram"
                   width={24}
                   height={24}
                 />
@@ -56,8 +56,8 @@ const Footer = () => {
                 className='text-white hover:text-gray-200 transition-colors'
               >
                 <Image
-                  src="/svgs/linkedin.svg"
-                  alt="LinkedIn"
+                  src="/svgs/linkedin-business-network.svg"
+                  alt="Connect with DhiGrowth on LinkedIn"
                   width={24}
                   height={24}
                 />
@@ -77,11 +77,12 @@ const Footer = () => {
         >
           <div className="flex justify-center">
             <Image
-              src="/img/shared/footertext.png"
-              alt="DHI GROWTH"
+              src="/img/shared/dhigrowth-business-growth-footer.png"
+              alt="DhiGrowth business growth solutions"
               width={1200}
               height={200}
-              className="w-full max-w-7xl"
+              className="w-full h-auto max-w-7xl"
+              loading="lazy"
             />
           </div>
         </InView>

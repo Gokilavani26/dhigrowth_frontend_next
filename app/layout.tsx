@@ -20,9 +20,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DhiGrowth",
+  metadataBase: new URL("https://dhigrowth.com"),
+
+  title: {
+    default: "DhiGrowth | Business Growth Agency",
+    template: "%s | DhiGrowth"
+  },
+
   description:
-    "Dhi Growth: Turning Your Business Potential into Lasting Success.",
+    "Business growth agency offering web development, SEO, automation and digital marketing solutions.",
+
+  applicationName: "DhiGrowth",
+
+  keywords: [
+    "business growth agency",
+    "web development company",
+    "SEO agency",
+    "automation solutions"
+  ],
+
+  authors: [{ name: "DhiGrowth Team" }],
+
+  creator: "DhiGrowth",
+
+  alternates: {
+    canonical: "/"
+  },
+
+  openGraph: {
+    title: "DhiGrowth | Business Growth Agency",
+    description:
+      "Dhi Growth: Turning Your Business Potential into Lasting Success.",
+    url: "https://dhigrowth.com",
+    siteName: "DhiGrowth",
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: "DhiGrowth | Business Growth Agency in Chennai",
+    description:
+      "Dhi Growth: Turning Your Business Potential into Lasting Success."
+  },
+
 };
 
 export default function RootLayout({

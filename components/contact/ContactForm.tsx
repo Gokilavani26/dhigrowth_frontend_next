@@ -155,17 +155,17 @@ export default function ContactForm() {
             visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
           }}
         >
-          <h1 className="font-headers text-5xl text-black mb-6">
+          <h3 className="font-headers text-5xl text-black mb-6">
             LET'S TALK ABOUT GROWING YOUR BUSINESS
-          </h1>
+          </h3>
 
           <p className="font-body text-gray text-lg leading-relaxed mb-6">
             Fill out the form below, and one of our experts will get in touch with you to discuss how we can elevate your business.</p>
 
           <div className="bg-gray-800 py-8 w-full">
-            <h2 className="text-2xl font-bold mb-8">
+            <h3 className="text-2xl font-bold mb-8">
               Contact Information
-            </h2>
+            </h3>
 
             {contactItems.map((item, index) => (
               <motion.div

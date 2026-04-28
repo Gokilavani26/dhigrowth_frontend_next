@@ -3,6 +3,25 @@ import SkilledUsersCommunity from "@/components/skilledUser/SkilledUsersCommunit
 import SkilledUsersOpportunities from "@/components/skilledUser/SkilledUsersOpportunities";
 import FAQSection from "@/components/home/FAQSection";
 import RegistrationForm from "@/components/skilledUser/RegistrationForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title:
+        "Join Freelance Community | Skilled Professionals Network",
+
+    description:
+        "Join DhiGrowth skilled community for freelance opportunities, digital projects and business collaborations.",
+
+    keywords: [
+        "freelance opportunities",
+        "join freelancer community",
+        "remote project opportunities"
+    ],
+
+    alternates: {
+        canonical: "/skilled-users"
+    }
+};
 
 export default function SkilledUsersPage() {
     return (

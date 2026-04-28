@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function AboutCommunity() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 md:py-16 py-12 font-body">
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -14,7 +14,7 @@ export default function AboutCommunity() {
         className="font-headers text-black text-center text-5xl md:mb-16 mb-12"
       >
         For Skilled Professionals: Unlock Your Earning Potential
-      </motion.h1>
+      </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <motion.div
@@ -24,9 +24,9 @@ export default function AboutCommunity() {
           viewport={{ once: true }}
           className="max-w-xl"
         >
-          <h2 className="font-headers text-black text-4xl mb-4">
+          <h3 className="font-headers text-black text-4xl mb-4">
             Empowering Skilled Individuals with <br /> Real Opportunities
-          </h2>
+          </h3>
           <p className="text-gray text-lg mb-8">
             At Dhigrowth, we are building a community of skilled professionals
             by providing real-world projects that offer learning, earning, and

@@ -70,9 +70,9 @@ const TestimonialsSection = () => {
   return (
     <div>
       <div className='py-12 md:py-16'>
-        <h2 className='font-headers text-4xl md:text-5xl max-w-md'>
+        <h3 className='font-headers text-4xl md:text-5xl max-w-md'>
           DELIVERING RESULTS THAT SPEAK FOR THEMSELVES
-        </h2>
+        </h3>
 
         <div className='my-8'>
           <InfiniteMovingCards

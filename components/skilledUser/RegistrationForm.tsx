@@ -180,9 +180,9 @@ export default function RegistrationForm() {
 
       {/* LEFT */}
       <div className="w-full md:w-1/2 lg:p-12 p-0 self-start">
-        <h1 className='font-headers text-5xl md:block hidden leading-tight text-black mb-6'>
+        <h3 className='font-headers text-5xl md:block hidden leading-tight text-black mb-6'>
           JOIN OUR COMMUNITY IN 5 <br /> MINUTES
-        </h1>
+        </h3>
 
         <p className="font-body text-gray text-lg leading-relaxed">
           Join our skilled community in minutes! Share your skills and experience to unlock tailored gigs. Once verified, access your dashboard and start earning. Let's begin!

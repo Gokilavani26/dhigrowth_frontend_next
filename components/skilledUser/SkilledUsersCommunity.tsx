@@ -15,14 +15,14 @@ export default function SkilledUsersCommunity() {
       className='w-full max-w-6xl mx-auto px-4 pt-16 font-body'
     >
       {/* Main Heading */}
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, scale: 0.9 }}
         animate={inView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className='font-headers text-black text-center text-5xl md:mb-16 mb-12'
       >
         Unlock Your Potential with DhiGrowth Talents
-      </motion.h1>
+      </motion.h2>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start'>
         {/* Left Section - Description & Button */}
@@ -32,9 +32,9 @@ export default function SkilledUsersCommunity() {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           className='max-w-xl'
         >
-          <h2 className='font-headers text-black text-4xl mb-4'>
+          <h3 className='font-headers text-black text-4xl mb-4'>
             Why Join our DhiGrowth Talents <br /> community?
-          </h2>
+          </h3>
           <p className='text-gray text-lg mb-8'>
             Join a community of skilled professionals, work on real projects,
             and earn on your terms. Enjoy flexible gigs, verified connections,
@@ -42,8 +42,8 @@ export default function SkilledUsersCommunity() {
           </p>
           <Link
             href="/skilled-users#join-community"
-             className="bg-btn-bg hover:bg-btn-hover text-white font-bold py-3 px-6 rounded-md transition-all duration-300 inline-block"
-              >
+            className="bg-btn-bg hover:bg-btn-hover text-white font-bold py-3 px-6 rounded-md transition-all duration-300 inline-block"
+          >
             Join Now and Start Earning
           </Link>
         </motion.div>

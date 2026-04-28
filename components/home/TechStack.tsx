@@ -4,16 +4,46 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/svgs/reactjs.svg",
-  "/svgs/sass.svg",
-  "/svgs/adobeai.svg",
-  "/svgs/analytics.svg",
-  "/svgs/android.svg",
-  "/svgs/figma.svg",
-  "/svgs/html5.svg",
-  "/svgs/js.svg",
-  "/svgs/nextjs.svg",
-  "/svgs/nodejs.svg",
+  {
+    src: "/svgs/react-js-development.svg",
+    alt: "React.js development technology",
+  },
+  {
+    src: "/svgs/sass-frontend-styling.svg",
+    alt: "Sass frontend styling technology",
+  },
+  {
+    src: "/svgs/adobe-illustrator-design.svg",
+    alt: "Adobe Illustrator design technology",
+  },
+  {
+    src: "/svgs/business-analytics-tools.svg",
+    alt: "Analytics and growth tools",
+  },
+  {
+    src: "/svgs/android-app-development.svg",
+    alt: "Android mobile app development",
+  },
+  {
+    src: "/svgs/figma-ui-ux-design.svg",
+    alt: "Figma UI UX design platform",
+  },
+  {
+    src: "/svgs/html5-web-development.svg",
+    alt: "HTML5 web development technology",
+  },
+  {
+    src: "/svgs/javascript-development.svg",
+    alt: "JavaScript development technology",
+  },
+  {
+    src: "/svgs/nextjs-react-framework.svg",
+    alt: "Next.js React framework",
+  },
+  {
+    src: "/svgs/nodejs-backend-development.svg",
+    alt: "Node.js backend development",
+  },
 ];
 
 const TechStack = () => {
@@ -38,11 +68,12 @@ const TechStack = () => {
                 style={{ flex: '0 0 auto' }}
               >
                 <Image
-                  src={logo}
-                  alt="Technology logo"
+                  src={logo.src}
+                  alt={logo.alt}
                   width={80}
                   height={80}
                   className="w-20 h-20 object-contain"
+                  loading="lazy"
                 />
               </div>
             ))}

@@ -47,7 +47,7 @@ const CaseStudy = () => {
 
   return (
     <div className='py-16' ref={ref}>
-      <motion.h1
+      <motion.h2
         className='sub-heading text-black pb-12 text-center'
         variants={slideInLeft}
         initial='hidden'
@@ -55,7 +55,7 @@ const CaseStudy = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         SEE HOW WE'VE HELPED BUSINESSES LIKE YOURS SUCCEED
-      </motion.h1>
+      </motion.h2>
 
       <motion.div
         className='grid lg:grid-cols-2 gap-12 items-start'

@@ -4,11 +4,26 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/img/clients/RutsNRideslogo.svg",
-  "/img/clients/Sanikaslogo.svg",
-  "/img/clients/Karisallogo.webp",
-  "/img/clients/Thoorigailogo.png",
-  "/img/clients/Gigabulllogo.webp",
+  {
+    src: "/img/clients/ruts-n-rides-client-logo.svg",
+    alt: "Ruts N Rides client brand logo",
+  },
+  {
+    src: "/img/clients/sanikas-fashion-client-logo.svg",
+    alt: "Sanikas fashion client logo",
+  },
+  {
+    src: "/img/clients/karisal-food-brand-client-logo.webp",
+    alt: "Karisal food brand client logo",
+  },
+  {
+    src: "/img/clients/thoorigai-brand-client-logo.png",
+    alt: "Thoorigai client brand logo",
+  },
+  {
+    src: "/img/clients/gigabull-business-client-logo.webp",
+    alt: "Gigabull business client logo",
+  },
 ];
 
 const Clients = () => {
@@ -16,9 +31,9 @@ const Clients = () => {
     <section className="w-full pt-[40px] bg-white overflow-hidden">
       <div>
         {/* Heading */}
-        <h2 className="flex justify-center font-headers text-nowrap text-xl md:text-3xl lg:text-4xl mb-4">
+        <h3 className="flex justify-center font-headers text-nowrap text-xl md:text-3xl lg:text-4xl mb-4">
           Our Trusted Clients
-        </h2>
+        </h3>
 
         {/* Slider */}
         <div className="relative w-full flex overflow-hidden">
@@ -33,9 +48,9 @@ const Clients = () => {
             style={{ whiteSpace: "nowrap" }}
           >
             {[...logos, ...logos, ...logos].map((logo, index) => {
-              const isClient2 = logo === "/img/clients/Sanikaslogo.svg";
-              const isClient4 = logo === "/img/clients/Karisallogo.webp";
-              const isClient5 = logo === "/img/clients/Thoorigailogo.png";
+              const isClient2 = logo.src === "/img/clients/sanikas-fashion-client-logo.svg";
+              const isClient4 = logo.src === "/img/clients/karisal-food-brand-client-logo.webp";
+              const isClient5 = logo.src === "/img/clients/thoorigai-brand-client-logo.png";
 
               const isLargerClient =
                 isClient2 || isClient4 || isClient5;
@@ -48,11 +63,11 @@ const Clients = () => {
                   style={{ flex: "0 0 auto" }}
                 >
                   <Image
-                    src={logo}
-                    alt="Client Logo"
+                    src={logo.src}
+                    alt={logo.alt}
                     width={160}
                     height={160}
-                    className="object-contain w-full h-full"
+                    className="object-contain w-full h-auto"
                   />
                 </div>
               );

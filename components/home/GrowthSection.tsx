@@ -14,24 +14,25 @@ type Service = {
   desc: string;
 };
 
+
 const services: Service[] = [
   {
-    img: "/img/homepage/CService1.png",
+    img: "/img/homepage/business-discovery-call-process.png",
     title: "Step 1: Discovery Call",
     desc: "We start with an in-depth discussion about your brand, its challenges, aspirations, and long-term goals.",
   },
   {
-    img: "/img/homepage/CService2.png",
+    img: "/img/homepage/marketing-audit-analysis-process.png",
     title: "Step 2: Audit & Analysis",
     desc: "Our team analyzes your marketing strategies, identifying strengths, weaknesses, and growth opportunities.",
   },
   {
-    img: "/img/homepage/CService3.png",
+    img: "/img/homepage/proposal-contract-onboarding-process.png",
     title: "Step 3: Proposal & Contract",
     desc: "We provide a clear roadmap with deliverables, timelines, and execution strategy tailored to your business.",
   },
   {
-    img: "/img/homepage/CService4.png",
+    img: "/img/homepage/client-onboarding-growth-process.png",
     title: "Step 4: Onboarding Procedures",
     desc: "We onboard you seamlessly with our team to begin executing growth strategies effectively.",
   },

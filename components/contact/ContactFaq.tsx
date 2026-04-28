@@ -94,12 +94,12 @@ export default function ContactFaq() {
       variants={containerVariants}
       id='faq'
     >
-      <motion.h1
+      <motion.h3
         variants={fadeUp}
         className='font-headers text-5xl text-center lg:mb-16 mb-12'
       >
         GOT QUESTIONS? WE'VE GOT ANSWERS
-      </motion.h1>
+      </motion.h3>
 
       <motion.div
         className='max-w-4xl mx-auto'

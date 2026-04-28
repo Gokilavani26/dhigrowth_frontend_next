@@ -10,14 +10,14 @@ export default function SkilledUsersOpportunities() {
 
   return (
     <div ref={ref} className='w-full max-w-6xl mx-auto px-4 pb-16 font-body'>
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, y: -50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className='font-headers text-black text-center text-5xl md:mb-16 mb-12'
       >
         How to Join & Start Earning with DHIGROWTH
-      </motion.h1>
+      </motion.h2>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start'>
         <motion.div
@@ -26,10 +26,10 @@ export default function SkilledUsersOpportunities() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className='max-w-xl'
         >
-          <h2 className='font-headers text-black text-4xl mb-4'>
+          <h3 className='font-headers text-black text-4xl mb-4'>
             Unlock Opportunities & Get Paid for Your
             <br /> Skills
-          </h2>
+          </h3>
           <p className='text-gray text-lg mb-8'>
             Get verified, access real projects, and work flexibly while earning
             for your skills. A simple process to start your journey!

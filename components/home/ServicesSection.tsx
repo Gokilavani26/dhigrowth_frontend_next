@@ -87,9 +87,9 @@ const ServicesSection = () => {
                 className='rounded-2xl border p-8 shadow-md backdrop-blur-3xl'
               >
                 <div className='flex items-center justify-between gap-4'>
-                  <h2 className='my-6 text-2xl uppercase font-bold tracking-tighter'>
+                  <h3 className='my-6 text-2xl uppercase font-bold tracking-tighter'>
                     {phase.title}
-                  </h2>
+                  </h3>
                   <h3 className='text-2xl font-bold text-indigo-500'>
                     {String(index + 1).padStart(2, '0')}
                   </h3>

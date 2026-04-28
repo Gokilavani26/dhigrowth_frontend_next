@@ -16,9 +16,9 @@ export default function SkilledUsersHero() {
   return (
     <>
       <div ref={ref} className='w-full bg-white mt-10 md:mb-24 mb-0'>
-        <h2 className='sub-heading text-primary mb-8'>
+        <h3 className='sub-heading text-primary mb-8'>
           Skilled User Community
-        </h2>
+        </h3>
 
         <div>
           <div className='grid lg:grid-cols-2 md:gap-7 gap-6 items-start'>
