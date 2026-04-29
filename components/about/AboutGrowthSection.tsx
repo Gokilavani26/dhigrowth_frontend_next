@@ -142,7 +142,7 @@ const GrowthSection = () => {
                     />
 
                     <div className="absolute inset-0 bg-black/60 p-4 flex flex-col justify-end">
-                      <h3 className="text-lg md:text-xl font-semibold mb-2 uppercase">
+                      <h3 className="text-white text-lg md:text-xl font-semibold mb-2 uppercase">
                         {service.title}
                       </h3>
                       <p className="text-white/90 text-sm">{service.desc}</p>
