@@ -18,16 +18,7 @@ export default function StatGrid() {
       setProjectValue(50);
     }
   }, [isInView]);
-  // if (isInView && value === 0) {
-  //   setValue(3);
-  // }
 
-  // if (isInView && clientValue === 0) {
-  //   setClientValue(100);
-  // }
-  // if (isInView && projectValue === 0) {
-  //   setProjectValue(50);
-  // }
   return (
     <>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-[4rem] gap-[3rem] justify-items-center'>

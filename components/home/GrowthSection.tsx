@@ -88,7 +88,7 @@ const GrowthSection = () => {
       <div className='container'>
         <div className='py-16'>
           <motion.div
-            className='grid lg:grid-cols-3 md:col-span-1 grid-cols-1 md:gap-8 gap-0 items-center'
+            className='grid lg:grid-cols-3 grid-cols-1 md:gap-8 gap-0 items-center'
             variants={containerVariants}
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
@@ -119,7 +119,7 @@ const GrowthSection = () => {
 
             {/* CARDS */}
             <motion.div
-              className="grid mt-8 md:mt-0 grid-cols-2 col-span-2 gap-4"
+              className="grid mt-8 md:mt-0 grid-cols-1 md:grid-cols-2 col-span-2 gap-4"
               variants={containerVariants}
             >
               {services.map((service, index) => (
@@ -136,13 +136,13 @@ const GrowthSection = () => {
                       alt={service.title}
                       width={500}
                       height={300}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-52 md:h-64 object-cover"
                       loading="eager"
                       priority
                     />
 
                     <div className="absolute inset-0 bg-black/60 p-4 flex flex-col justify-end">
-                      <h3 className="text-white text-xl font-semibold mb-2 uppercase">
+                      <h3 className="text-lg md:text-xl font-semibold mb-2 uppercase">
                         {service.title}
                       </h3>
                       <p className="text-white/90 text-sm">{service.desc}</p>
