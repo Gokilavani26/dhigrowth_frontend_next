@@ -6,51 +6,64 @@ import { useRef } from "react";
 export default function ContactFaq() {
   const questions = [
     {
-      id: '01',
-      question: 'What are your pricing models?',
-      answer: 'We offer flexible pricing models based on your project needs:',
-      points: [
-        'Fixed pricing: For specific projects with defined scopes.',
-        'Hourly pricing: For ongoing support or consultation.',
-        'Custom packages: Tailored pricing for long-term partnerships.',
-      ],
-    },
-    {
-      id: '02',
-      question: 'How can Dhigrowth help my business grow?',
+      id: "01",
+      question: "Why should I hire an App Development Company in Coimbatore?",
       answer:
-        'We provide customized IT solutions that streamline your operations, enhance your online presence, and boost efficiency. From website development and automation to digital marketing.',
+        "An App Development Company in Coimbatore helps businesses create scalable and user-friendly mobile applications for Android and iOS platforms. Local expertise, faster communication, and dedicated support make the development process more efficient and cost-effective.",
     },
     {
-      id: '03',
-      question: 'Can Dhigrowth help automate my business processes?',
+      id: "02",
+      question: "What services does an App Development Company in Coimbatore provide?",
       answer:
-        'Absolutely! We specialize in business automation to reduce manual work, improve accuracy, and increase productivity. This includes automating lead management, invoicing, customer support, and more.',
+        "An App Development Company in Coimbatore offers mobile app design, Android app development, iOS app development, testing, maintenance, and cloud integration services. Many companies also provide custom business applications and AI-powered mobile solutions.",
     },
     {
-      id: '04',
-      question:
-        'What kind of support does Dhigrowth offer after project completion?',
+      id: "03",
+      question: "How much does an App Development Company in Coimbatore charge?",
       answer:
-        'We provide ongoing support and maintenance to keep your business running smoothly. Our team ensures your website, applications, and systems remain updated, secure, and optimized for long-term growth.',
+        "The pricing of an App Development Company in Coimbatore depends on app features, design complexity, and development requirements. Simple applications typically cost less, while enterprise-grade or AI-integrated solutions require a higher investment.",
     },
     {
-      id: '05',
-      question: 'How does the collaboration process work?',
-      answer: 'Our collaboration process includes:',
-      points: [
-        'Consultation: We understand your business goals and challenges.',
-        'Strategy: We create a tailored plan with clear deliverables.',
-        'Execution: Our team develops and implements the solution.',
-        'Review & Refinement: We ensure the solution meets your expectations.',
-        'Ongoing Support: We provide continuous assistance and updates.',
-      ],
-    },
-    {
-      id: '06',
-      question: 'Is my business data secure with Dhigrowth?',
+      id: "04",
+      question: "How long does an App Development Company in Coimbatore take to develop an app?",
       answer:
-        'Yes, we prioritize data security and follow industry-standard practices to protect your information. We ensure all projects comply with data privacy regulations and use secure servers and encryption methods.',
+        "Development timelines vary based on project requirements. A mobile application can take anywhere from a few weeks to several months, depending on features, UI/UX design, testing, integrations, and deployment needs.",
+    },
+    {
+      id: "05",
+      question: "Can an App Development Company in Coimbatore build apps for startups?",
+      answer:
+        "Yes. App Development Companies in Coimbatore build customized applications for startups, small businesses, and enterprises. They help businesses launch scalable mobile solutions with modern features and seamless user experiences.",
+    },
+    {
+      id: "06",
+      question: "What is AI Automation development in Coimbatore?",
+      answer:
+        "AI Automation development in Coimbatore helps businesses automate repetitive tasks using artificial intelligence, machine learning, and smart workflows. It improves productivity, reduces manual effort, and enhances operational efficiency.",
+    },
+    {
+      id: "07",
+      question: "Which businesses can benefit from AI Automation development in Coimbatore?",
+      answer:
+        "AI Automation solutions benefit industries such as healthcare, retail, manufacturing, education, logistics, and finance. Businesses use automation to streamline customer service, data management, lead generation, and daily operations.",
+    },
+    {
+      id: "08",
+      question: "What technologies are used in AI Automation development in Coimbatore?",
+      answer:
+        "AI Automation development leverages technologies such as machine learning, AI chatbots, predictive analytics, workflow automation tools, natural language processing (NLP), and intelligent process automation to improve business efficiency.",
+    },
+    {
+      id: "09",
+      question: "Is AI Automation development in Coimbatore affordable for small businesses?",
+      answer:
+        "Yes. AI Automation solutions can be tailored to fit different budgets and business sizes. Small businesses often use automation to reduce operational costs, save time, and improve productivity without significantly increasing overhead expenses.",
+    },
+    {
+      id: "10",
+      question: "How do I choose the best company for AI Automation development in Coimbatore?",
+      answer:
+        "Choose a company based on its experience, technical expertise, client portfolio, and proven project success. A reliable AI automation partner should offer customized solutions, transparent communication, and ongoing technical support.",
     },
   ];
 

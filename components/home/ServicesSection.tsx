@@ -12,40 +12,82 @@ const ServicesSection = () => {
 
   const PROCESS_PHASES = [
     {
-      id: 'service-1',
-      title: '1. AI Automation',
+      id: "service-1",
+      title: "1. Website Development",
       description:
-        'AI Automation refers to the integration of Artificial Intelligence (AI) with automated systems to perform tasks that typically require human intelligence and decision-making.',
+        "Custom, responsive, and SEO-ready websites built for speed, performance, and conversions.",
     },
     {
-      id: 'service-2',
-      title: '2. Website Development',
+      id: "service-2",
+      title: "2. Application Development",
       description:
-        'We create websites that are not only visually stunning but also intuitive and responsive. Our focus is on delivering a seamless user experience that drives engagement, supports your brand identity, and converts visitors into customers.',
+        "iOS, Android, and cross-platform applications designed to deliver seamless user experiences and scalable performance.",
     },
     {
-      id: 'service-3',
-      title: '3. Application Development',
+      id: "service-3",
+      title: "3. AI Development",
       description:
-        'Our custom applications are designed to streamline your operations and enhance customer interactions. With user-friendly interfaces and robust functionality, we deliver solutions that adapt perfectly to your business needs.',
+        "Smart AI-powered products including chatbots, recommendation engines, and custom machine learning solutions tailored to your business.",
     },
     {
-      id: 'service-4',
-      title: '4. Social Media Marketing',
+      id: "service-4",
+      title: "4. AI Automation",
       description:
-        'From content creation to targeted ad campaigns, our social media marketing drives meaningful engagement and boosts your brand’s online presence. We tailor strategies that build communities and convert followers into customers.',
+        "Automate repetitive tasks and complex workflows using intelligent AI solutions that improve productivity and accuracy.",
     },
     {
-      id: 'service-5',
-      title: '5. WhatsApp Chat Automation',
+      id: "service-5",
+      title: "5. WhatsApp Marketing",
       description:
-        'Our WhatsApp Chat Automation service enables instant, personalized communication with your customers, improving response times and customer satisfaction while reducing manual effort.',
+        "Drive engagement and sales with high-converting WhatsApp campaigns powered by the WhatsApp Business API.",
     },
     {
-      id: 'service-6',
-      title: '6. Business Automation',
+      id: "service-6",
+      title: "6. Business Automation",
       description:
-        'We automate repetitive business processes to save time, reduce errors, and increase efficiency. Our business automation solutions empower your team to focus on what matters most—growing your business.',
+        "Streamline operations, reduce costs, and boost efficiency with smart automation systems tailored to your workflows.",
+    },
+    {
+      id: "service-7",
+      title: "7. Business Development",
+      description:
+        "Strategic consulting and execution services designed to expand your market presence and accelerate business growth.",
+    },
+    {
+      id: "service-8",
+      title: "8. SEO",
+      description:
+        "Improve search rankings with technical SEO, content optimization, keyword strategy, and quality link building.",
+    },
+    {
+      id: "service-9",
+      title: "9. Digital Marketing",
+      description:
+        "Full-funnel digital marketing campaigns that attract, engage, and convert customers across multiple channels.",
+    },
+    {
+      id: "service-10",
+      title: "10. Social Media Marketing",
+      description:
+        "Build your brand presence and community through strategic content and campaigns across Instagram, Facebook, and LinkedIn.",
+    },
+    {
+      id: "service-11",
+      title: "11. Meta & Google Ads",
+      description:
+        "Highly targeted paid advertising campaigns designed to maximize reach, leads, and return on ad spend.",
+    },
+    {
+      id: "service-12",
+      title: "12. Ads Shooting",
+      description:
+        "Professional advertisement production from creative concept development to camera-ready commercial content.",
+    },
+    {
+      id: "service-13",
+      title: "13. Video Editing",
+      description:
+        "High-quality video editing for reels, advertisements, brand films, promotional content, and social media campaigns.",
     },
   ];
 

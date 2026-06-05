@@ -23,7 +23,7 @@ const AboutHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h1 className="main-heading text-center sm:text-left uppercase">
+          <h1 className="main-heading text-center sm:text-left mt-10 uppercase">
             Delivering Huge Impact
             <br /> on Your <br />
             <Highlight className="text-black px-4 sm:pl-1 sm:pr-4">
@@ -39,10 +39,10 @@ const AboutHero = () => {
           className="space-y-6"
         >
           <p className="font-body text-gray text-lg leading-relaxed">
-            At Dhigrowth, we are more than just an IT service provider—we are
-            your growth partner. Our mission is to help businesses overcome
-            challenges, streamline operations, and scale effectively through
-            innovative technology solutions.
+            DhiGrowth is a full-service digital agency headquartered in Coimbatore, India. We help startups, SMEs, and enterprises build a powerful digital presence and grow their business through smart technology and data-driven marketing.
+            <br />
+            <br />
+            From building high-performance websites and mobile applications to deploying AI automation, running paid ad campaigns, and creating compelling video content we are the one-stop partner for every digital need your business has. We are not just a service provider. We are your growth partner invested in your success, committed to measurable outcomes, and driven by a passion for innovation.
           </p>
 
           <motion.div
@@ -52,14 +52,14 @@ const AboutHero = () => {
           >
             <Link href={TOPMATE_LINK} target="_blank">
               <button className="btn btn-primary bg-primary hover:bg-btn-hover">
-                Book a Free Consult
+                Book a Free Consultation
               </button>
             </Link>
           </motion.div>
 
-          <div className="text-sm font-sub text-gray">
+          {/* <div className="text-sm font-sub text-gray">
             Looking for customized solutions? Let’s discuss your business needs!
-          </div>
+          </div> */}
         </motion.div>
 
       </div>

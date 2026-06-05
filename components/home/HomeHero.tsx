@@ -23,10 +23,18 @@ const HomeHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h1 className="main-heading text-center sm:text-left uppercase">
+          {/* <h1 className="main-heading text-center sm:text-left uppercase">
             Business Growth Agency Delivering Huge Impact <br /> For Your <br />
             <Highlight className="text-black px-4 sm:pl-1 sm:pr-4">
               Business Growth
+            </Highlight>
+          </h1> */}
+
+          <h1 className="main-heading text-center sm:text-left uppercase">
+            Coimbatore's Leading Digital Growth Partner  — <br />
+            <Highlight className="text-black px-4 sm:pl-1 sm:pr-4">
+              Web, App, AI & Marketing Solutions
+
             </Highlight>
           </h1>
         </motion.div>
@@ -39,11 +47,7 @@ const HomeHero = () => {
           className="space-y-8"
         >
           <p className="font-body text-gray text-lg leading-relaxed">
-            At Dhigrowth, we empower businesses to scale, automate, and succeed
-            through cutting-edge technology and expert-driven strategies.
-            Whether you need a website, application, Marketing, Automation or a
-            complete business growth solution, we’ve got you covered.
-          </p>
+            DhiGrowth is a full-service digital agency in Coimbatore helping businesses scale faster with cutting-edge website development, mobile app development, AI automation, and result-driven digital marketing. From Meta Ads and Google Ads to WhatsApp marketing, SEO, and video production — we build everything your business needs to grow online.  </p>
 
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
@@ -73,7 +77,7 @@ const HomeHero = () => {
         transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
         className="mt-12 relative w-full h-auto rounded-xl overflow-hidden"
       >
-        <ParallaxImage bgImage={BGImg} fgImage={ForeImg}/>
+        <ParallaxImage bgImage={BGImg} fgImage={ForeImg} />
       </motion.div>
     </div>
   );

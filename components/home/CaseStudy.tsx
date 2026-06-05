@@ -54,7 +54,7 @@ const CaseStudy = () => {
         animate={inView ? 'visible' : 'hidden'}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        SEE HOW WE'VE HELPED BUSINESSES LIKE YOURS SUCCEED
+        WHO WE ARE
       </motion.h2>
 
       <motion.div
@@ -135,25 +135,35 @@ const CaseStudy = () => {
             variants={fadeIn}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
           >
-            At Dhigrowth, we specialize in empowering businesses with innovative
-            IT solutions and digital strategies. Our expert team helps you build
-            powerful websites, optimize online presence, and implement
-            automation to streamline operations. We focus on delivering tailored
-            solutions that drive growth, enhance efficiency, and maximize your
-            ROI. Let us help you transform challenges into opportunities and
-            grow your business with confidence.
+            We are DhiGrowth — a Coimbatore-based digital agency that combines technology, creativity, and strategy to deliver measurable business results. Whether you are a startup, SME, or enterprise, our end-to-end digital solutions are built to accelerate your growth.
           </motion.p>
-          <motion.div
-            variants={slideInLeft}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
+          <ul
+            className='list-disc list-inside body-text text-lg space-y-2 text-black-500'
           >
-            <Link href="/about">
-              <button className="btn btn-primary self-start">
-                Explore our services
-              </button>
-            </Link>
-          </motion.div>
+            <li>
+              <b> Technology-first:</b> From custom websites to AI-powered automation, we build future-ready digital products.
+            </li>
+            <li>
+              <b> Marketing that converts:</b> Data-driven SEO, paid ads, and social media strategies that bring real ROI.
+            </li>
+            <li>
+              <b> Coimbatore roots, global standards:</b> Local expertise with world-class execution for businesses of all sizes.
+            </li>
+          </ul>
+
         </motion.div>
+
+      </motion.div>
+      <motion.div
+        variants={slideInLeft}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
+        className='w-full flex items-center justify-center mt-8'
+      >
+        <Link href="/about">
+          <button className="btn btn-primary gap-2">
+            Explore our services
+          </button>
+        </Link>
       </motion.div>
     </div>
   );

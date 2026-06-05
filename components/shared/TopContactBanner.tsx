@@ -1,5 +1,5 @@
+import { EMAIL_ID, PHONE_NUMBERS } from "@/config/contactConfig";
 import { Phone, Mail } from "lucide-react";
-import { EMAIL_ID, PHONE_NO } from "@/config/contactConfig";
 
 const TopContactBanner = () => {
   return (
@@ -14,8 +14,8 @@ const TopContactBanner = () => {
             <Phone size={16} className="mr-2" />
             <span>
               Ph -{" "}
-              <a href={`tel:${PHONE_NO}`} className="hover:underline">
-                +91-{PHONE_NO}
+              <a href={`tel:${PHONE_NUMBERS[0]}`} className="hover:underline">
+                +91-{PHONE_NUMBERS[0]}
               </a>
             </span>
           </div>

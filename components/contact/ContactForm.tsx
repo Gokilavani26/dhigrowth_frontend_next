@@ -2,28 +2,26 @@
 
 import React, { useRef, useState, FormEvent } from "react";
 import { motion, useInView } from "framer-motion";
-import { EMAIL_ID, PHONE_NO } from "@/config/contactConfig";
 import publicStore from "@/stores/publicStores";
+import { EMAIL_ID, LOCATIONS, PHONE_NUMBERS } from "@/config/contactConfig";
 
 const iconBg = {
   blue: "bg-blue-500",
   green: "bg-green-500",
   red: "bg-red-500",
 } as const;
-
 const contactItems = [
   {
     iconColor: "blue" as const,
     label: "Email:",
-    value: EMAIL_ID,
-    href: `mailto:${EMAIL_ID}`,
+    values: [EMAIL_ID],
     icon: (
       <svg
-        xmlns='http://www.w3.org/2000/svg'
-        className='h-6 w-6 text-blue-400'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke='currentColor'
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-blue-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
         <path
           strokeLinecap="round"
@@ -37,15 +35,14 @@ const contactItems = [
   {
     iconColor: "green" as const,
     label: "Phone:",
-    value: `+91-${PHONE_NO}`,
-    href: `tel:${PHONE_NO}`,
+    values: PHONE_NUMBERS.map((phone) => `+91-${phone}`),
     icon: (
       <svg
-        xmlns='http://www.w3.org/2000/svg'
-        className='h-6 w-6 text-green-400'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke='currentColor'
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-green-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
         <path
           strokeLinecap="round"
@@ -58,16 +55,15 @@ const contactItems = [
   },
   {
     iconColor: "red" as const,
-    label: "Location:",
-    value: "Chennai, Tamilnadu",
-    href: null,
+    label: "Locations:",
+    values: LOCATIONS,
     icon: (
       <svg
-        xmlns='http://www.w3.org/2000/svg'
-        className='h-6 w-6 text-red-400'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke='currentColor'
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-red-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
         <path
           strokeLinecap="round"
@@ -85,7 +81,6 @@ const contactItems = [
     ),
   },
 ];
-
 
 export default function ContactForm() {
   const ref = useRef(null);
@@ -193,20 +188,43 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <p className="text-gray-400 font-semibold">
+                  <p className="text-gray-400 font-semibold mb-1">
                     {item.label}
                   </p>
 
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="text-gray-400"
-                    >
-                      {item.value}
-                    </a>
-                  ) : (
-                    <p>{item.value}</p>
-                  )}
+                  <div className="space-y-1 ">
+                    {item.values.map((value, idx) => {
+                      if (item.label === "Email:") {
+                        return (
+                          <a
+                            key={idx}
+                            href={`mailto:${value}`}
+                            className="block text-gray hover:text-primary transition-colors"
+                          >
+                            {value}
+                          </a>
+                        );
+                      }
+
+                      if (item.label === "Phone:") {
+                        return (
+                          <a
+                            key={idx}
+                            href={`tel:${value.replace("+91-", "")}`}
+                            className="block text-gray hover:text-primary transition-colors"
+                          >
+                            {value}
+                          </a>
+                        );
+                      }
+
+                      return (
+                        <p key={idx} className="text-gray">
+                          {value}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
               </motion.div>
             ))}

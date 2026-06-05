@@ -16,28 +16,23 @@ export default function FAQSection() {
   const questions: FAQ[] = [
     {
       id: "01",
-      question: "What services does Dhigrowth offer?",
-      answer: "We provide a wide range of IT and digital services, including:",
-      points: [
-        "Website and application development",
-        "Digital marketing and SEO optimization",
-        "Business automation and workflow solutions",
-        "Custom business growth strategies",
-      ],
+      question: "Why should I hire an App Development Company in Coimbatore?",
+      answer:
+        "An App Development Company in Coimbatore helps businesses create scalable and user-friendly mobile applications for Android and iOS platforms. Local expertise, faster communication, and dedicated support make the development process more efficient and cost-effective.",
     },
     {
       id: "02",
-      question: "How can Dhigrowth help grow my business?",
+      question: "What services does an App Development Company in Coimbatore provide?",
       answer:
-        "We identify the core challenges in your business and offer tailored solutions. Whether you need a new website, marketing strategies, or automation to improve efficiency.",
+        "An App Development Company in Coimbatore offers mobile app design, Android app development, iOS app development, testing, maintenance, and cloud integration services. Many companies also provide custom business applications and AI-powered mobile solutions.",
     },
     {
       id: "03",
-      question:
-        "Do you offer customized solutions for specific business needs?",
+      question: "How much does an App Development Company in Coimbatore charge?",
       answer:
-        "Yes, we specialize in creating customized solutions based on your unique business goals.",
+        "The pricing of an App Development Company in Coimbatore depends on app features, design complexity, and development requirements. Simple applications typically cost less, while enterprise-grade or AI-integrated solutions require a higher investment.",
     },
+
   ];
 
   const ref = useRef<HTMLDivElement | null>(null);

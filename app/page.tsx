@@ -12,19 +12,10 @@ import Clients from '@/components/home/Clients';
 
 export const metadata: Metadata = {
   title:
-    "Business Growth Agency | Web Development, SEO & Automation | DhiGrowth",
+    "Business Growth Agency | Web Development, SEO & Automation | DhiGrowtDhiGrowth — Digital Agency in Coimbatore | Web, AI & Marketing",
 
   description:
-    "DhiGrowth is a business growth agency offering web development, digital marketing, automation and scalable technology solutions to help brands grow faster.",
-
-  keywords: [
-    "business growth agency",
-    "web development company",
-    "digital marketing agency",
-    "business automation services",
-    "AI automation services",
-    "DhiGrowth"
-  ],
+    "DhiGrowth is Coimbatore's top digital agency offering website development, AI solutions, SEO, Meta & Google Ads, social media, and business automation services.",
 
   alternates: {
     canonical: "https://dhigrowth.com",

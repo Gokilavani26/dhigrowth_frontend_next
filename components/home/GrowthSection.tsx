@@ -14,32 +14,31 @@ type Service = {
   desc: string;
 };
 
-
 const services: Service[] = [
   {
     img: "/img/homepage/business-discovery-call-process.png",
-    title: "Step 1: Discovery Call",
-    desc: "We start with an in-depth discussion about your brand, its challenges, aspirations, and long-term goals.",
+    title: "1. Discover",
+    desc: "We learn about your business, goals, and competition to build a tailored growth plan.",
   },
   {
     img: "/img/homepage/marketing-audit-analysis-process.png",
-    title: "Step 2: Audit & Analysis",
-    desc: "Our team analyzes your marketing strategies, identifying strengths, weaknesses, and growth opportunities.",
+    title: "2. Strategise",
+    desc: " Our team crafts a data-backed digital strategy aligned to your industry and target audience.",
   },
   {
     img: "/img/homepage/proposal-contract-onboarding-process.png",
-    title: "Step 3: Proposal & Contract",
-    desc: "We provide a clear roadmap with deliverables, timelines, and execution strategy tailored to your business.",
+    title: "3. Execute",
+    desc: "From development to campaigns — we build, launch, and manage with precision.",
   },
   {
     img: "/img/homepage/client-onboarding-growth-process.png",
-    title: "Step 4: Onboarding Procedures",
-    desc: "We onboard you seamlessly with our team to begin executing growth strategies effectively.",
+    title: "4. Grow",
+    desc: "We monitor, optimise, and scale — continuously improving your results month after month.",
   },
 ];
 
 const GrowthSection = () => {
-  const words = "Our Onboarding Process";
+  const words = "Our process — simple, transparent, results-driven";
 
   const ref = useRef<HTMLDivElement | null>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
@@ -97,13 +96,15 @@ const GrowthSection = () => {
               className='space-y-8 mt-5 sm:mt-0 lg:hidden block self-start'
               variants={containerVariants}
             >
+
               <motion.div variants={headingVariant}>
                 <TextGenerateEffect
                   duration={0.2}
-                  className='main-heading text-left text-white'
+                  className="main-heading text-black"
                   words={words}
                 />
               </motion.div>
+
               <motion.div variants={buttonVariant}>
                 <Link href="/contact">
                   <motion.button
@@ -160,7 +161,7 @@ const GrowthSection = () => {
               <motion.div variants={headingVariant}>
                 <TextGenerateEffect
                   duration={0.2}
-                  className="main-heading text-white"
+                  className="main-heading text-left text-white"
                   words={words}
                 />
               </motion.div>

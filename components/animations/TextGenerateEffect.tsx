@@ -16,7 +16,7 @@ interface TextGenerateEffectProps {
   textColor?: string;
   duration?: number;
 }
-
+  
 export const TextGenerateEffect = ({
   words,
   className,

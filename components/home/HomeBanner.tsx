@@ -71,15 +71,20 @@ const HomeBanner = () => {
       >
         <div className="container text-center px-4 max-w-4xl">
           <motion.h1 className="main-heading text-white" variants={h1Variants}>
-            READY TO TRANSFORM YOUR BUSINESS?
+            READY TO GROW YOUR BUSINESS IN COIMBATORE?
           </motion.h1>
 
-          <motion.h2
+          <p
+            className="font-body text-white  text-lg mt-6 max-w-2xl mx-auto"
+          >
+            Talk to our digital growth experts today. Get a free audit of your website, ads, or social media — and a custom roadmap to scale your business faster.
+          </p>
+          {/* <motion.h2
             className="main-heading text-white mb-10"
             variants={h2Variants}
           >
             LET'S BUILD SOMETHING INCREDIBLE TOGETHER.
-          </motion.h2>
+          </motion.h2> */}
 
           <motion.div variants={buttonVariants}>
             <a
@@ -88,11 +93,11 @@ const HomeBanner = () => {
               rel="noopener noreferrer"
             >
               <motion.button
-                className="btn btn-primary flex items-center justify-center mx-auto px-8 py-4 rounded-md text-lg"
+                className="btn btn-primary flex items-center justify-center mx-auto mt-6 px-8 py-4 rounded-md text-lg"
                 whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
                 whileTap={{ scale: 0.95 }}
               >
-                Schedule a Free Consultation
+                Book a Free Consultation
               </motion.button>
             </a>
           </motion.div>

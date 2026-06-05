@@ -8,6 +8,7 @@ export default function StatGrid() {
   const [value, setValue] = useState(0);
   const [clientValue, setClientValue] = useState(0);
   const [projectValue, setProjectValue] = useState(0);
+  const [servicesValue, setServicesValue] = useState(0);
   const ref = useRef<HTMLHeadingElement | null>(null);
   const isInView = useInView(ref, { once: true });
 
@@ -16,12 +17,13 @@ export default function StatGrid() {
       setValue(3);
       setClientValue(100);
       setProjectValue(50);
+      setServicesValue(13);
     }
   }, [isInView]);
 
   return (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-[4rem] gap-[3rem] justify-items-center'>
+      <div className='grid grid-cols-1 md:grid-cols-4 lg:gap-[8rem] gap-[5rem] justify-items-center'>
         <div className='text-center'>
           <p className='font-headers text-nowrap mb-4 responsive-heading uppercase'>
             YEARS OF EXPERIENCE
@@ -58,8 +60,7 @@ export default function StatGrid() {
             %
           </h2>
         </div>
-
-        {/* Successful Projects Delivered */}
+              
         <div className='text-center'>
           <p className='font-headers text-nowrap mb-4 responsive-heading uppercase'>
             PROJECTS COMPLETED
@@ -75,6 +76,28 @@ export default function StatGrid() {
               }}
               value={projectValue}
             />{' '}
+            +
+          </h2>
+        </div>
+
+        {/* Range of Services */}
+        <div className='text-center md:col-span-3 lg:col-span-1'>
+          <p className='font-headers text-nowrap mb-4 responsive-heading uppercase'>
+            SERVICES OFFERED
+
+          </p>
+          <h2
+            className='font-numeric flex justify-center leading-none text-transparent bg-clip-text bg-white stroke-primary stroke-2 responsive-numeric'
+            style={{ WebkitTextStroke: '2px #2196F3' }}
+          >
+            <AnimatedNumber
+              springOptions={{
+                bounce: 0,
+                duration: 1000,
+              }}
+              value={servicesValue}
+            />
+            {' '}
             +
           </h2>
         </div>

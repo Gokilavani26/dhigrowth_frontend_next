@@ -91,24 +91,23 @@ const NavBar = () => {
                   </li>
 
                   <li>
-                    <Link href="/contact" onClick={handleLinkClick} className={linkStyle("/contact")}>
-                      Contact
-                    </Link>
-                  </li>
-
-                  <li>
                     <Link href="/about" onClick={handleLinkClick} className={linkStyle("/about")}>
                       About
                     </Link>
                   </li>
 
                   <li>
+                    <Link href="/contact" onClick={handleLinkClick} className={linkStyle("/contact")}>
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
                     <a
                       href={TOPMATE_LINK}
                       target="_blank"
                       className="font-bold text-primary underline mt-2"
                     >
-                      Get a Free Consult
+                      Get a Free Consultation
                     </a>
                   </li>
 
@@ -127,14 +126,25 @@ const NavBar = () => {
               </li>
 
               <li>
-                <Link href="/contact" className={linkStyle("/contact")}>
-                  Contact
+                <Link href="/about" className={linkStyle("/about")}>
+                  About
                 </Link>
               </li>
 
               <li>
-                <Link href="/about" className={linkStyle("/about")}>
-                  About
+                <Link href="/services" onClick={handleLinkClick} className={linkStyle("/services")}>
+                  Our Services
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/case-studies" onClick={handleLinkClick} className={linkStyle("/case-studies")}>
+                  Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className={linkStyle("/contact")}>
+                  Contact
                 </Link>
               </li>
 
@@ -144,7 +154,7 @@ const NavBar = () => {
                   target="_blank"
                   className="font-bold text-primary underline"
                 >
-                  Get a Free Consult
+                  Get a Free Consultation
                 </a>
               </li>
 

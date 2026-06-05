@@ -71,7 +71,8 @@ const TestimonialsSection = () => {
     <div>
       <div className='py-12 md:py-16'>
         <h3 className='font-headers text-4xl md:text-5xl max-w-md'>
-          DELIVERING RESULTS THAT SPEAK FOR THEMSELVES
+         {/* What our clients in Coimbatore say about DhiGrowth */}
+         WHAT OUR CLIENS IN COIMBATORE SAY ABOUT DhiGrowth
         </h3>
 
         <div className='my-8'>
