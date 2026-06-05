@@ -139,7 +139,7 @@ export default function ContactFaq() {
                   </div>
                 </h2>
                 <p className='font-sub text-gray/80 text-lg'>{item.answer}</p>
-                {item.points && (
+                {/* {item.points && (
                   <ul className='mt-4'>
                     {item.points.map((point, index) => (
                       <li
@@ -150,7 +150,7 @@ export default function ContactFaq() {
                       </li>
                     ))}
                   </ul>
-                )}
+                )} */}
               </div>
               <div
                 className='font-numeric hidden sm:block text-4xl sm:text-5xl md:text-6xl text-transparent bg-clip-text bg-white stroke-primary stroke-2'
